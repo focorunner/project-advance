@@ -23,12 +23,12 @@ Class database {
     }
     
     public function dbconnect () {
-        $host = localhost;
-        $user = "root";
-        $pw = "root";
-        $dbname = "clubcard";
+        $host = "localhost";
+        $user = "";
+        $pw = "";
+        $dbname = "test";
         $port = "3306";
-        
+
         $db = new mysqli($host,$user,$pw,$dbname,$port);
 
         if($db->connect_errno > 0){
@@ -156,9 +156,10 @@ Class database {
             }
         }
     }
-
+/*
     private function logError($err) {
 
     }
+*/
 }
 ?>

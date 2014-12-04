@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 // Homepage placeholder.
 // I'm just using this to run/test classes for now.
 // Later build web-responsive homepage using bootstrap framework.
