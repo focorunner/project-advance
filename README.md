@@ -47,8 +47,6 @@ remove($db, $table, $action, $id = null)
     Parameters
         $db:  REQUIRED(string), a database connection object
         $table:  REQUIRED(string), the name of the database table - depends on what tables your app uses
-        $action:  REQUIRED(string), the type of delete/drop action requested
-            valid strings: "rm_single", "rm_all", "drop_table"
         $id: a single or list of record id/s
             OPTIONAL(string or int) if all fields for all records are desired
             REQUIRED(string or int) for all other requests
@@ -57,3 +55,8 @@ remove($db, $table, $action, $id = null)
                     examples: 1, "1", "1,4,9,10,15" ...
         $between
             OPTIONAL(string), the upper and lower id's of a desired range
+    Echos
+        Success message - confirms what new item (table or record) exists
+        SQL errors
+    Returns
+        Incorrect or missing parameter errors
